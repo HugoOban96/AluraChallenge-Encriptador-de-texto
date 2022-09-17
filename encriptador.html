@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador/Desencriptador de texto-ChallengenAlura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script_encriptador.js"></script>
+
+</head>
+    
+<body>
+    <div class="frame-total">
+        <div class="logo">
+            <img class="imglogo" src="Logo.png">
+            <h1 class="textlogo">Encriptor/Desencriptador de texto</h1>
+        </div>
+
+    
+        <div class="frame-left">
+            <input class="mensaje" type="text" id="textoEncriptar" placeholder="Ingrese el texto aquí ">
+            <label>Solo letras minúsculas y sin acentos</label>
+            <div class="framebottom">    
+                <button id="botonEncriptar" onclick="encriptar()">Encriptar</button>
+                <button id="botonDesencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div> 
+        </div>
+        <div class="frame-right">
+                <div id="accionencriptar" >
+                    <img src="Muñeco.png" id="imgright">
+                    <h2 id="mensajerect1">Ningún mensaje encontrado</h2>
+                    <textarea id="textdesencriptar"name="name" rows="8" cols="38">Ingrese el texto que desees encriptar o desencriptar.</textarea>
+                    <button id="copiar" onclick="copiar()">Copiar</button>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <p class="copyright">Hugo Alberto Obando Orozco AluraChallenge - 2022</p>
+    </footer>
+</body>
+</html>
